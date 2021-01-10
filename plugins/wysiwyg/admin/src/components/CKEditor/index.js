@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import styled from 'styled-components';
-// import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
-// ClassicEditor.builtinPlugins.push(Alignment);
-// console.log(ClassicEditor.builtinPlugins)
+
 const Wrapper = styled.div`
   .ck-editor__main {
     min-height: 200px;
@@ -16,9 +14,6 @@ const Wrapper = styled.div`
 `;
 
 const configuration = {
-    alignment: {
-        options: [ 'left', 'right']
-    },
   toolbar: [
     'heading',
     '|',
@@ -32,7 +27,6 @@ const configuration = {
     'outdent',
     '|',
     'blockQuote',
-    'alignment',
     'insertTable',
     'undo',
     'redo',
