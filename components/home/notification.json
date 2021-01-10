@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_home_notifications",
+  "info": {
+    "name": "notification",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

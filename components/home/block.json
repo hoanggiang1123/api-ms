@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_blocks",
+  "info": {
+    "name": "block",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "feature": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.feature"
+    }
+  }
+}

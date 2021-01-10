@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "vi",
+        "zh"
+      ]
+    },
+    "promotions": {
+      "via": "tags",
+      "collection": "promotion"
+    }
+  }
+}

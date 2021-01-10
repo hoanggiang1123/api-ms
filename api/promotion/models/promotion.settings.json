@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promotions",
+  "info": {
+    "name": "promotion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "seo_title": {
+      "type": "string"
+    },
+    "seo_description": {
+      "type": "string"
+    },
+    "seo_keyword": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "promotion_start": {
+      "type": "datetime"
+    },
+    "promotion_end": {
+      "type": "datetime"
+    },
+    "promotion_code": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "language": {
+      "model": "language",
+      "via": "promotions"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "promotions",
+      "dominant": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_menusections",
+  "info": {
+    "name": "menusection",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.menu"
+    }
+  }
+}
