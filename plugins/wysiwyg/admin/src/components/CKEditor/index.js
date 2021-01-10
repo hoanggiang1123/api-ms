@@ -43,7 +43,6 @@ const configuration = {
     ]
  }
 };
-
 const Editor = ({ onChange, name, value }) => {
   return (
     <Wrapper>
@@ -55,6 +54,11 @@ const Editor = ({ onChange, name, value }) => {
           const data = editor.getData();
           onChange({ target: { name, value: data } });
         }}
+        onReady={(editor) => {
+            if (value) {
+               editor.setData(value);
+            }
+         }}
       />
     </Wrapper>
   );
