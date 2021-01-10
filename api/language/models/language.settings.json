@@ -19,13 +19,13 @@
       "required": true,
       "unique": true
     },
-    "promotions": {
-      "via": "language",
-      "collection": "promotion"
-    },
     "pages": {
       "via": "language",
       "collection": "page"
+    },
+    "promotions": {
+      "via": "language",
+      "collection": "promotion"
     }
   }
 }
