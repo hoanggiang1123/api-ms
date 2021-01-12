@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_home_banners",
+  "info": {
+    "name": "banner",
+    "icon": "file-image"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

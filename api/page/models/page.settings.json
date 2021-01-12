@@ -49,6 +49,9 @@
     "language": {
       "model": "language",
       "via": "pages"
+    },
+    "seo_brc": {
+      "type": "json"
     }
   }
 }

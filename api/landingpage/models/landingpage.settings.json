@@ -52,6 +52,9 @@
       "type": "component",
       "repeatable": true,
       "component": "home.block"
+    },
+    "seo_brc": {
+      "type": "json"
     }
   }
 }
